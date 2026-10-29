@@ -56,8 +56,8 @@ function drawRect() { //This draws a rectangle on the canvas
    function my_image() {//this function displays my chosen image
 	var a_canvas =document.getElementById('a'); //this variable calls the canvas using an id
 	var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
-	var longhornimg = document.getElementById('longhornimg');//pulls longhorn image
-	a_context.drawImage(longhornimg, 5, 5, 100, 100);//draws image with size created by 4 numbers
+	var longhornimg = document.getElementById('pugging');//pulls pug image
+	a_context.drawImage(pugging, 5, 5, 100, 100);//draws image with size created by 4 numbers
 
 };
    function clear_canvas() {//this function clears the canvas
@@ -113,7 +113,7 @@ function drawRect() { //This draws a rectangle on the canvas
 <p> Click the buttons below to create a work of art! </p> <!-- This acts as both an instructional and a space between the rectangle and buttons-->
     <a onclick="drawRect();" class="w3-btn w3-grey w3-round"> Draw Rectangle!</a> <!--This creates a pink (and cute) button that's very excited to draw a rectangle on the canvas!-->
     <a onclick="my_name();" class="w3-btn w3-grey w3-round"> Write name!</a> <!-- This creates a light blue button that's very exited to write my name-->
-    <img id='longhornimg' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-isjo4U0C_b0Y_e72RgWEM6ti2EOccWMG6SbMXJiw8sHCQ2vTQK8Bd4LVSU-92AK8E_URY6O2FGY6FYrDy_MlCPW3gz5w0z03yKEPufKa&s=10' alt='Image of Pug' class='hidden' width='0' height='0'> <!-- Add  longhorn image -->
+    <img id='pugging' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-isjo4U0C_b0Y_e72RgWEM6ti2EOccWMG6SbMXJiw8sHCQ2vTQK8Bd4LVSU-92AK8E_URY6O2FGY6FYrDy_MlCPW3gz5w0z03yKEPufKa&s=10' alt='Image of Pug' class='hidden' width='0' height='0'> <!-- Add  longhorn image -->
     <a onclick="my_image();" class="w3-btn w3-grey w3-round"> Draw image! </a> <!--To draw the image-->
 	<a onclick="clear_canvas();" class="w3-btn w3-grey w3-round"> Clear Canvas!</a> <!--Add your comment here that describes the code-->
 
