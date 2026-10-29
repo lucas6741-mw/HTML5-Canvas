@@ -26,8 +26,7 @@ References:
 https://www.w3schools.com/w3css/default.asp
 
 -->
-	
-   <head> 
+	 <head> 
       <title>HTML5-Canvas</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="mobile-web-app-capable" content="yes">
@@ -35,11 +34,47 @@ https://www.w3schools.com/w3css/default.asp
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
-
-<script>
+	<script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 //alert("This file last modified " + docMod); // generates alert box with last modified time stamp. un-comment out this entire line if you want to use.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
+
+function drawRect() { //This draws a rectangle on the canvas
+	var a_canvas = document.getElementById('a'); //this variable calls the canvas using an id
+	var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
+	a_context.fillStyle = "#808080"; // rectangle is grey
+	a_context.fillRect(5, 5, 175, 100);//sets coordinates and placement of rectangle
+
+};
+   function my_name() {//this function displays my name, "Lucas"
+	var a_canvas = document.getElementById('a'); //this variable calls the canvas using an id
+	var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
+	a_context.font = "30px Times New Roman"; // adds font for my name and size
+	a_context.fillStyle = "#000000"; // sets color of text to black
+	a_context.fillText ("Lucas", 10, 150); //adds name text and coordinates for my name
+};
+   function my_image() {//this function displays my chosen image
+	var a_canvas =document.getElementById('a'); //this variable calls the canvas using an id
+	var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
+	var longhornimg = document.getElementById('longhornimg');//pulls longhorn image
+	a_context.drawImage(longhornimg, 5, 5, 100, 100);//draws image with size created by 4 numbers
+
+};
+   function clear_canvas() {//this function clears the canvas
+	var a_canvas =document.getElementById('a');//this variable calls the canvas using an id
+ 	a_canvas.width = a_canvas.width; // causes the canvas to clear
+};
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
 </script>
 
 <style>
